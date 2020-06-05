@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tip Calculator</string>
+    <string name="perPersonStaticText">Per Buddy</string>
+    <string name="billStaticText">Total Damage ($)</string>
+    <string name="tipStaticText">Generous Tip</string>
+    <string name="numberOfPeopleStaticText">Buddies</string>
+</resources>

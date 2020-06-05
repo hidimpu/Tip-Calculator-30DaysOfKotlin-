@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        tools:context=".MainActivity">
+
+    <TextView
+            android:id="@+id/expensePerPersonTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            style="@style/h1Bold"
+            android:textColor="@color/colorAccent"
+            android:text="0"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="25dp"
+            style="@style/h2"
+            android:textColor="@color/colorAccent"
+            android:text="@string/perPersonStaticText"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/colorAccent">
+
+        <TextView
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                style="@style/h4"
+                android:text="@string/billStaticText"/>
+
+        <EditText
+                android:id="@+id/billEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                style="@style/h2Bold"
+                android:text="0"/>
+
+        <TextView
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                style="@style/h4"
+                android:text="@string/tipStaticText"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <ImageButton
+                    android:id="@+id/subtractTipButton"
+                    style="@style/operationButton"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/subtract"/>
+
+            <TextView
+                    android:id="@+id/tipTextView"
+                    android:layout_margin="15dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:layout_weight="1"
+                    style="@style/h2Bold"
+                    android:text="20%"/>
+
+            <ImageButton
+                    android:id="@+id/addTipButton"
+                    style="@style/operationButton"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/add"/>
+
+        </LinearLayout>
+
+        <TextView
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                style="@style/h4"
+                android:text="@string/numberOfPeopleStaticText"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <ImageButton
+                    android:id="@+id/subtractPeopleButton"
+                    style="@style/operationButton"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/subtract"/>
+
+            <TextView
+                    android:id="@+id/numberOfPeopleTextView"
+                    android:layout_margin="15dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:layout_weight="1"
+                    style="@style/h2Bold"
+                    android:text="4"/>
+
+            <ImageButton
+                    android:id="@+id/addPeopleButton"
+                    style="@style/operationButton"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/add"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
